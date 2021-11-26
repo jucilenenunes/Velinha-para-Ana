@@ -1,0 +1,152 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+  background: linear-gradient(to right, lightcoral, rgb(41, 27, 27));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; 
+}
+
+.titulo {
+    padding-bottom: 50px;
+    display: inline-block;
+    background: linear-gradient(to right, rgb(41, 27, 27), lightseagreen);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  
+}
+
+.container {
+  position: relative;
+  height: 210px;
+  width: 265px;
+  
+}
+
+.container > .fogo {
+	width: 10px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	left: 123px;
+    background: linear-gradient(-55deg, red, yellow);
+}
+
+.container:hover > .fogo {
+    background: none;
+}
+
+.fio {
+	height:10px;
+	width:2px;
+	background: #000;
+	position: absolute;
+	top: 18px;
+	left: 127px;
+	z-index: 7;
+}
+
+.vela {
+	height:60px;
+	width:15px;
+	background: #ccc;
+	position: absolute;
+	top: 25px;
+	left: 120px;
+	z-index: 4;
+}
+
+.vela-top {
+	height:8px;
+	width:15px;
+	border-radius: 50%;
+	background: #b1b1b1;
+	border: 1px solid #b1b1b1;
+	position: absolute;
+	top: 23px;
+	left: 120px;
+	z-index: 5;
+}
+
+.vela-base {
+	height:10px;
+	width:15px;
+	border-radius: 50%;
+	background: #ccc;
+	position: absolute;
+	top: 77px;
+	left: 120px;
+	z-index: 5;
+}
+
+.base {
+  border-radius: 50%;
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  z-index: 1;
+  background: #592f02;
+  border: 2px solid #3d2302;
+}
+
+.bolo {
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 85px;
+  left: 30px;
+  background: #592f02;
+}
+
+.cobertura {
+  border-radius: 50%;
+  border: 5px solid #592f02;
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  z-index: 3;
+  top: 50px;
+  left: 30px;
+  background-color: #592f02;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(0,0,0,.5) 5px, rgba(0,0,0,.5) 20px);
+}
+
+.prato {
+  border-radius: 50%;
+  height: 80px;
+  width: 230px;
+  position: absolute;
+  z-index: 0;
+  background: #cfcfcf;
+  top: 125px;
+  left: 15px;
+}
